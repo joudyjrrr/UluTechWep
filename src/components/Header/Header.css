@@ -1,0 +1,174 @@
+#home{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #0d2448 !important;
+
+    }
+    .onscroll{
+      background-color: #0d2448 !important;
+      width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .menu-navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 18px 70px;
+        }
+        .menu-navbar .header-logo img{
+            width: 80px;
+        }
+        .links{
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .links ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        }
+        li{
+        position: relative;
+        padding: 0 1rem;
+        }
+        .links li a{
+        position: relative;
+        text-decoration: none !important;
+        color: #fff ;
+        text-transform: capitalize;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 90px;
+        padding: 0;
+        padding-bottom: 3px;
+        transition: all 0.3s ease-in-out 0s;
+        font-weight: bold;
+        }
+        .links li a:hover{
+          color: #FFE500 ;
+          border-bottom: 2px solid #fff;
+        }
+        .controle{
+          display: flex;
+        }
+        .controle i{
+          font-size: 22px;
+          cursor: pointer;
+          margin: 0 10px;
+          color: #fff;
+        }
+        .menu{
+          display: none;
+        }
+        .ModalOverlay ,.ModalOverlaySearch{
+          position: fixed;
+          top: 20%;
+          left: 0%;
+          z-index: 100000;
+          width: 100%;
+          background: #abddf2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease-in-out 0s;
+        }
+     
+         .modal , .modalSearch{
+             width: 100%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+         }
+         /* .smallLinks{
+          width: 100%;
+         } */
+         .modal ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+         }
+         .modal a{
+        position: relative;
+        text-decoration: none !important;
+        color: #0d2448 ;
+        text-transform: capitalize;
+        font-size: 1rem;
+        font-weight: 500;
+        padding-bottom: 3px;
+        transition: all 0.3s ease-in-out 0s;
+        font-weight: bold;
+        display: block;
+         }
+         .modal li{
+          padding: 15px 0px;
+          transition: all 0.3s ease-in-out 0s;
+         }
+         .modal li:hover {
+          border-bottom: 1px solid #0d2448;
+         }
+
+         .menu{
+          display: none !important;
+         }
+        @media (max-width:762px) {
+          .links{
+            display: none;
+          }
+           .menu{
+            display: block !important;
+           }
+        }
+        .modalSearch{
+          position: relative;
+          padding: 25px 0;
+        }
+        .modalSearch input{
+          border: none;
+        border-bottom: 2px solid #0d2448;
+        font-size: 2.5rem;
+        outline: none;
+        color: #fff;
+        background-color: transparent;
+        width: 70%;
+        padding: 10x 15px;
+        }
+        .modalSearch .search {
+          position: absolute;
+          top: 34px;
+          right: 132px;
+          color: #0d2448;
+          font-size: 30px;
+          cursor: pointer;
+        }
+        .modalSearch .closeSearch{
+          position: absolute;
+          top: 6px;
+          right: 24px;
+          color: #0d2448;
+          font-size: 22px;
+          cursor: pointer;
+        }
+        @media (max-width:500px) {
+          .menu-navbar{
+            margin: 15px !important;
+          }
+          
+        }

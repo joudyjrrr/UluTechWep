@@ -1,0 +1,111 @@
+.Choose{
+    width: calc(100%-50px);
+    display: flex;
+    position: relative;
+    z-index: 0;
+    margin-top: 150px;
+}
+.ChooseImg{
+    width: 60%;
+    display: flex;
+}
+.ChooseHead{
+    width: 65%;
+    margin-left: 55px;
+}
+.ChooseImg img{
+    width: 100%;
+}
+.ChooseHead p {
+    font-size: 15px;
+}
+.ChooseInfo{
+    margin-top: 25px;
+}
+.ChooseInfo , .info-num{
+    display: flex;
+    flex-direction: column;
+}
+.info-content{
+    display: flex;
+}
+.info-content span{
+    display: flex;
+    margin-right: 5px;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 0.8;
+    color: #abddf2;
+}
+.info-content .info-title{
+font-weight: bold;
+font-size: 1.5rem;
+text-transform: capitalize;
+margin: 5px 0;
+}
+.info-item{
+    margin: 12px 0;
+    padding: 15px;
+    transition: all 0.3s ease-in-out 0s;
+    border-radius: 10px;
+}
+.info-item:hover{
+    box-shadow: -1px 0px 22px 0px rgba(171,221,242,1);
+}
+.Choose .btn{
+    color: #0d2448;
+    background-color: #FFE500;
+    border-color: #FFE500;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    text-align: center;
+    text-transform: capitalize;
+    outline: none;
+    border-radius: 0.25rem;
+    border-top-right-radius:10px  ;
+    border-top-right-radius: 10px;
+    padding: 0.75rem 2.25rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    z-index: 0;
+    display: block ruby;
+    flex-basis: 25%;
+    height: fit-content;
+    margin: 50px 19px;
+    width: fit-content;
+    border: 1px solid #FFE500;
+}
+.Choose .btn:hover{
+    background-color: transparent;
+    border: 1px solid #FFE500;
+    color: #FFE500;
+}
+@media (max-width:992px) {
+    .ChooseImg{
+        display: none;
+    }
+    .ChooseHead{
+        width: 90%;
+        align-items: center;
+    }
+}
+@media (max-width:450px) {
+  .info-title{
+    font-size: 20px !important;
+  }
+
+}
+@media (max-width:400px) {
+    .info-title{
+      font-size: 16px !important;
+      margin: 10px 0 !important;
+    }
+  
+  }

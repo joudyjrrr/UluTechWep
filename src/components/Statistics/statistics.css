@@ -1,0 +1,117 @@
+#Statistics{
+    width: 100%;
+    margin-top: 100px;
+}
+.Statisticsontent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #fff;
+}
+.statisInfo{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 1px solid #abddf2;
+    border-top: 7px  solid #abddf2!important;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 40px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out 0s;
+
+}
+.statisInfo i{
+    font-size: 3rem;
+line-height: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #abddf2;
+transition: all 0.2s ease-in-out 0s;
+}
+.statisInfo p{
+ display: block;
+font-size: 3rem;
+font-weight: 600;
+line-height: 1.6;
+margin-bottom: 0;
+}
+.statisInfo span{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+@media (max-width:992px) {
+    .Statisticsontent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .statisInfo{
+        width: 60%;
+    }
+}
+@media (max-width:700px) {
+    .Statisticsontent{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .statisInfo{
+        width: 80%;
+    }
+}
+.stat-desc{
+    font-size: 20px;
+}
+.statisInfo:hover{
+    background-color: #abddf2;
+    transform: translateY(-13px);
+}
+.statisInfo:hover i , span , p{
+      color: #0d2448;
+}
+.statisInfo:hover span{
+    color: #0d2448;
+}
+.custmor{
+margin-top: 50px ;
+}
+.contetn-custmour{
+    display: flex !important;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.custmour-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 0;
+}
+.custmour-item img{
+width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  border: 3px solid #abddf2;
+  margin-bottom: 2rem;
+}
+.custmour-item p{
+    font-weight: 300;
+  line-height: 1.7;
+  font-style: italic;
+  color:#fff;
+  padding: 0;
+  font-size: 20px;
+}
+.custmour-item h4{
+    color: #abddf2;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+/* .headCu .title{
+    text-align: center !important;
+}
+.headCu{
+    text-align: center !important;
+} */

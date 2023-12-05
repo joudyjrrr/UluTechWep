@@ -1,0 +1,205 @@
+.About{
+    width: calc(100%-50px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+
+}
+.headArea{
+  display: flex;
+}
+.headingAbout{
+    width: 80%;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column !important;
+    margin: 0 80px;
+    }
+    .headingAbout h1{
+        position: relative;
+        margin-bottom: 0.75rem;
+        font-size:40px;
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1.5px;
+        line-height: 1.3;
+        display: inline-block;
+        z-index: 0;
+        color: #fff;
+      }
+      .headingAbout span{
+        color: #FFE500;
+        position: relative;
+      }
+      .headingAbout p{
+        font-size: 20px;
+        color: #bdced6ba;
+        margin-top: 20px;
+      }
+     svg{
+        position: absolute;
+        left: 38%;
+        top: 50%;
+        width: 100%;
+        height: calc(100% + 40px);
+        transform: translate(-50%, -50%)
+     }
+     svg path{
+stroke: #FFE500;
+stroke-width: 0.5rem;
+     fill: transparent;
+     }
+     .AboutContent{
+        width: 100%;
+        display: flex;
+     }
+     .content{
+        flex-basis: 65%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 20px;
+        margin-top: 40px;
+        margin-left: 80px;
+     }
+     .info-content{
+      display: flex;
+      gap: 10px;
+     }
+     .info-content i{
+      margin-right: 1.25rem;
+      margin-bottom: 1rem;
+      color: #abddf2;
+      font-size: 2rem;
+      border: 1px solid #abddf2;
+      transition: all 0.3s ease-in-out 0s;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      text-align: center;
+      padding: 10px 2px;
+     }
+  .info-content h5{
+font-weight: bold;
+font-size: 25px;
+text-transform: capitalize;
+color: #fff;
+margin: 5px 0;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .info p{
+    line-height: 1.6;
+    opacity: 0.75;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 44px;
+  }
+  .AboutImg{
+    width: 25%;
+    position: relative;
+    top: 100px;
+  }
+  .AboutImg img{
+    width: 100%;
+  }
+@media (max-width:1050px) {
+         .AboutContent{
+             flex-direction: column;
+         }
+         .content{
+          flex-basis: 80%;
+         }
+         .AboutImg{
+          width: 52%;
+          margin: 0 auto;
+         }
+}
+
+@media (max-width:750px) {
+  .content{
+    grid-template-columns: repeat(1, auto);
+  }
+  .AboutImg{
+    display: none;
+  }
+  .headingAbout{
+text-align: center;
+  }
+}
+.info:hover  i{
+  transform: translateY(-7px) ;
+  background-color: #abddf2;
+  color: #0d2448;
+}
+.headArea .btn{
+  color: #fff;
+  background-color: #FFE500;
+  border-color: #FFE500;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  text-align: center;
+  text-transform: capitalize;
+  outline: none;
+  border-radius: 0.25rem;
+  border-top-right-radius:10px  ;
+  border-top-right-radius: 10px;
+  padding: 0.75rem 2.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  z-index: 0;
+  display: block ruby;
+  flex-basis: 25%;
+  height: fit-content;
+  margin: 110px 19px;
+  width: fit-content;
+}
+.btn:hover{
+  background-color: transparent;
+  color: #FFE500;
+  border: 1px solid #FFE500;
+}
+.headArea i{
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.headArea a:hover  i{
+  transform: translatex(5px);
+}
+@media (max-width:800px) {
+  .headArea{
+   flex-direction: column;
+  }
+  .headArea .btn{
+    margin: 30px auto;
+  }
+}
+@media (max-width:400px) {
+  .content , .headingAbout{
+    width: calc(100%-25px);
+    margin: 0 25px;
+  }
+ 
+}
+@media (max-width:650px) {
+  .content , .headingAbout{
+    width: calc(100%-30px);
+    margin: 15px 30px;
+  }
+  .content p{
+    font-size: 15px !important;
+  }
+ h1{
+  font-size: 25px !important;
+ }
+}
